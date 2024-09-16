@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.pixelstalk.net/wp-content/uploads/2016/11/Crescent-Moon-Full-HD-Wallpaper.jpg') no-repeat center center/cover;
+  color: #f2f2f2;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #4caf50;
+}
+
+/* Home Section - Techie & Moon Theme */
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.pixelstalk.net/wp-content/uploads/2016/11/Crescent-Moon-Full-HD-Wallpaper.jpg') no-repeat center center/cover;
+  text-align: center;
+}
+
+.moon-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.moon-container p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #f2f2f2;
+}
+
+.social-icons a:hover {
+  color: #4caf50;
+}
+
+/* About Section */
+#about, #projects, #skills, #contact, #certifications, #experiences {
+  padding: 80px 20px;
+  text-align: center;
+  
+}
+
+/* Project Cards */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  display: block;
+  width: 300px;
+  text-decoration: none;
+  color: inherit; /* Ensure text color is inherited from parent */
+  border: 1px solid #efe5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card-content {
+  padding: 20px;
+  background-color: #0d0b0b;
+}
+
+/* Certifications and Experiences Sections */
+#certifications, #experiences {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.pixelstalk.net/wp-content/uploads/2016/11/Crescent-Moon-Full-HD-Wallpaper.jpg') no-repeat center center/cover;
+  background-color: #0e0202;
+  text-align: center;
+}
+.certification-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certification-card {
+  background-color: #0d0b0b;
+  color: #f2f2f2;
+  border: 1px solid #efe5e5;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: scale(1.05);
+}
+
+.certification-card h3 {
+  margin-bottom: 10px;
+}
+
+.certification-card p {
+  margin: 5px 0;
+}
+
+
+/* Skills Section */
+#skills {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Tabs Styling */
+.skills-tabs {
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px; /* Roundish corners for tabs */
+  font-size: 1rem;
+}
+
+.tab-button:hover {
+  background-color: #45a049;
+}
+
+/* Skills Content */
+.skill-content {
+  display: none; /* Hide all content by default */
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping of items if needed */
+  gap: 10px; /* Space between skill items */
+}
+
+.skill-item {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; /* Roundish corners for skills */
+  font-size: 1rem;
+  display: inline-block;
+}
+
+/* Contact Section */
+.contact-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contact-btn:hover {
+  background-color: #3e8e41;
+}
+
+.email-link {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally center the content */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left; /* Align text to the left within the container */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.contact-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #4caf50;
+  object-fit: cover; /* Ensure image scales properly */
+}
